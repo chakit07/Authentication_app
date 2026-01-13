@@ -1,0 +1,32 @@
+services:
+  - type: web
+    name: authentication-backend
+    env: node
+    rootDir: backend/server
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: MONGO_URI
+        sync: false
+      - key: FRONTEND_URL
+        sync: false
+      - key: JWT_SECRET_KEY
+        sync: false
+      - key: JWT_EXPIRE
+        sync: false
+      - key: COOKIE_EXPIRE
+        sync: false
+      - key: SMTP_HOST
+        sync: false
+      - key: SMTP_PORT
+        sync: false
+      - key: SMTP_MAIL
+        sync: false
+      - key: SMTP_PASSWORD
+        sync: false
+      - key: TWILIO_ACCOUNT_SID
+        sync: false
+      - key: TWILIO_AUTH_TOKEN
+        sync: false
+      - key: TWILIO_PHONE_NUMBER
+        sync: false
