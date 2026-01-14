@@ -97,12 +97,6 @@ const Login = () => {
                 >
                   Password
                 </label>
-                <Link
-                  to="/forgot-password"
-                  className="text-sm font-medium text-primary-600 hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300 transition-colors"
-                >
-                  Forgot Password?
-                </Link>
               </div>
               <div className="relative">
                 <Lock className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
@@ -129,6 +123,12 @@ const Login = () => {
                   )}
                 </button>
               </div>
+                 <Link
+                  to="/forgot-password"
+                  className="text-sm font-medium text-primary-600 hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300 transition-colors"
+                >
+                  Forgot Password?
+                </Link>
             </div>
 
             {/* Submit Button */}
